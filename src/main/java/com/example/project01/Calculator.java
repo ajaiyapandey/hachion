@@ -1,23 +1,50 @@
 package com.example.project01;
 
+/**
+ * Provides basic arithmetic operations and a console demonstration.
+ */
 public class Calculator {
-    
-    // Addition
+
+    /**
+     * Adds two numbers.
+     *
+     * @param a the first number
+     * @param b the second number
+     * @return the sum of {@code a} and {@code b}
+     */
     public static double add(double a, double b) {
         return a + b;
     }
-    
-    // Subtraction
+
+    /**
+     * Subtracts the second number from the first number.
+     *
+     * @param a the number to subtract from
+     * @param b the number to subtract
+     * @return the difference between {@code a} and {@code b}
+     */
     public static double subtract(double a, double b) {
         return a - b;
     }
-    
-    // Multiplication
+
+    /**
+     * Multiplies two numbers.
+     *
+     * @param a the first number
+     * @param b the second number
+     * @return the product of {@code a} and {@code b}
+     */
     public static double multiply(double a, double b) {
         return a * b;
     }
-    
-    // Division
+
+    /**
+     * Divides the first number by the second number.
+     *
+     * @param a the dividend
+     * @param b the divisor
+     * @return the quotient, or {@code 0} when {@code b} is zero
+     */
     public static double divide(double a, double b) {
         if (b == 0) {
             System.out.println("Error: Cannot divide by zero!");
@@ -25,8 +52,14 @@ public class Calculator {
         }
         return a / b;
     }
-    
-    // Modulo
+
+    /**
+     * Calculates the remainder after dividing the first number by the second.
+     *
+     * @param a the dividend
+     * @param b the divisor
+     * @return the remainder, or {@code 0} when {@code b} is zero
+     */
     public static double modulo(double a, double b) {
         if (b == 0) {
             System.out.println("Error: Cannot divide by zero!");
@@ -34,7 +67,12 @@ public class Calculator {
         }
         return a % b;
     }
-    
+
+    /**
+     * Runs a console demonstration of the calculator operations.
+     *
+     * @param args command-line arguments, which are not used
+     */
     public static void main(String[] args) {
         System.out.println("=== Simple Calculator ===\n");
         

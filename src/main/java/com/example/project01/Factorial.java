@@ -1,8 +1,16 @@
 package com.example.project01;
 
+/**
+ * Calculates factorial values using recursive and iterative approaches.
+ */
 public class Factorial {
-    
-    // Method to calculate factorial using recursion
+
+    /**
+     * Calculates a factorial recursively.
+     *
+     * @param n the non-negative integer whose factorial is calculated
+     * @return {@code n!}, or {@code -1} when {@code n} is negative
+     */
     public static long factorialRecursive(int n) {
         if (n < 0) {
             System.out.println("Error: Factorial is not defined for negative numbers!");
@@ -13,8 +21,13 @@ public class Factorial {
         }
         return n * factorialRecursive(n - 1);
     }
-    
-    // Method to calculate factorial using iteration
+
+    /**
+     * Calculates a factorial iteratively.
+     *
+     * @param n the non-negative integer whose factorial is calculated
+     * @return {@code n!}, or {@code -1} when {@code n} is negative
+     */
     public static long factorialIterative(int n) {
         if (n < 0) {
             System.out.println("Error: Factorial is not defined for negative numbers!");
@@ -26,8 +39,12 @@ public class Factorial {
         }
         return result;
     }
-    
-    // Method to display factorial
+
+    /**
+     * Prints the recursive and iterative factorial results for a number.
+     *
+     * @param n the number whose factorial is displayed
+     */
     public static void displayFactorial(int n) {
         System.out.println("\n--- Factorial of " + n + " ---");
         long recursiveResult = factorialRecursive(n);
@@ -40,7 +57,12 @@ public class Factorial {
             System.out.println("Iterative Method: " + n + "! = " + iterativeResult);
         }
     }
-    
+
+    /**
+     * Runs a console demonstration with several factorial inputs.
+     *
+     * @param args command-line arguments, which are not used
+     */
     public static void main(String[] args) {
         System.out.println("=== Factorial Calculator ===");
         
