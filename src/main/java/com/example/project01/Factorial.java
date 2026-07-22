@@ -1,3 +1,5 @@
+package com.example.project01;
+
 public class Factorial {
     
     // Method to calculate factorial using recursion
@@ -54,4 +56,3 @@ public class Factorial {
         displayFactorial(-5);
     }
 }
-

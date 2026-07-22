@@ -1,3 +1,5 @@
+package com.example.project01;
+
 public class Calculator {
     
     // Addition
@@ -50,4 +52,3 @@ public class Calculator {
         System.out.println("Modulo: " + num1 + " % " + num2 + " = " + modulo(num1, num2));
     }
 }
-
