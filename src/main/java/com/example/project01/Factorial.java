@@ -76,5 +76,6 @@ public class Factorial {
         
         // Test with negative number
         displayFactorial(-5);
+        System.err.println("Note: Factorial is not defined for negative numbers.");
     }
 }
